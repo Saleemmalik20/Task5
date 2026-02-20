@@ -404,3 +404,50 @@ console.log(cut);
 
 sales.splice(0,1,10000);
 console.log(sales);
+
+
+
+// 10 Data Cleaning System
+
+
+// let rawData = [1, 2, null, 4, undefined, 6, [7, 8], { a: 10 }];
+
+
+// Tasks:
+// • Print last element using length
+// • Flatten array
+// • Remove last element
+// • Add 100 at end
+// • Clone cleaned array
+
+
+let rawData = [1, 2, null, 4, undefined, 6, [7, 8], { a: 10 }];
+
+// Printing last Element using Length
+
+let lastElement = rawData[rawData.length-1];
+console.log("Last Element is :",lastElement);
+
+
+// Flatting array 
+
+let flatten = rawData.flat(Infinity);
+console.log("Flatten Array is : " ,flatten);
+
+
+// Removing last Element from array
+
+flatten.pop();
+console.log("Removed Last Element is : ", flatten);
+
+
+// Adding 100 at the end of array.
+
+flatten.push(100);
+console.log("Adding 100 to array:" , flatten);
+
+
+// Cloning cleaned Array
+
+let clonning = [...flatten];
+console.log("Cloning cleaned Array :", clonning);
